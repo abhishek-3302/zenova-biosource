@@ -133,6 +133,10 @@ export function Footer() {
           <p className="text-xs text-slate-400">
             © {year} {site.name}. All rights reserved.
           </p>
+          <p className="text-xs text-slate-400">
+            Developed by{" "}
+            <span className="font-medium text-slate-300">Genware Technologies</span>
+          </p>
           <div className="flex items-center gap-6 text-xs text-slate-400">
             <Link href="/privacy" className="hover:text-teal-bright">
               Privacy Policy

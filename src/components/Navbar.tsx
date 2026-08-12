@@ -86,7 +86,7 @@ export function Navbar() {
             />
           </div>
           <div className="leading-tight">
-            <span className="font-display block text-[17px] font-bold tracking-tight text-ink">
+            <span className="font-display block text-[17px] font-bold tracking-tight text-[#01225A]">
               ZENOVA <span className="text-teal-bright">BIOSOURCE</span>
             </span>
             <span className="block text-[10px] font-medium uppercase tracking-[0.22em] text-mut">

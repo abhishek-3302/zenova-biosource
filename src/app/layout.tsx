@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   icons: {
-    icon: "/logo.png?v=2",
-    apple: "/logo.png?v=2",
+    icon: "/logo.png?v=3",
+    apple: "/logo.png?v=3",
   },
   robots: {
     index: true,
@@ -64,7 +64,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${inter.variable} ${interTight.variable}`}
     >
-      <body className="min-h-dvh flex flex-col bg-base text-ink">
+      <body className="min-h-dvh flex flex-col bg-base text-ink" suppressHydrationWarning>
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:rounded-full focus:bg-teal focus:px-5 focus:py-2.5 focus:text-navy-deep focus:font-semibold"

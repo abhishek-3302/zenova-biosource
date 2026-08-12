@@ -28,7 +28,7 @@ export const site = {
   url: "https://www.zenovabiosource.com",
   description:
     "Zenova Biosource supplies laboratory, diagnostic and medical equipment to hospitals, labs, research institutes and government bodies across India.",
-  email: "info@zenovabiosource.com",
+  email: "Zenovabiosource@outlook.com",
   phone: "+91 70024 30314",
   phoneHref: "tel:+917002430314",
   whatsapp: "https://wa.me/917002430314",
