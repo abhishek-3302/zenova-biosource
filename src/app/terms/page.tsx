@@ -7,7 +7,10 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Terms of Service for Zenova Biosource — terms governing quotations, orders, pricing, delivery, installation, warranties, service agreements and use of this website.",
+    "Terms of Service for Zenova Biosource — terms governing quotations, orders, pricing, delivery, installation, warranties, service agreements and website use.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 const sections = [

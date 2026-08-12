@@ -4,9 +4,12 @@ import { ProductsBrowser } from "@/components/products/ProductsBrowser";
 import { CTA } from "@/components/home/CTA";
 
 export const metadata: Metadata = {
-  title: "Products",
+  title: "Laboratory & Diagnostic Equipment Catalog",
   description:
-    "Browse Zenova Biosource product catalog — diagnostic equipment, laboratory equipment, medical equipment, consumables, diagnostic kits, chemicals, surgical supplies and laboratory infrastructure.",
+    "Browse the Zenova Biosource catalog — diagnostic, laboratory and medical equipment, consumables, diagnostic kits, chemicals and surgical supplies.",
+  alternates: {
+    canonical: "/products",
+  },
 };
 
 export default function ProductsPage() {

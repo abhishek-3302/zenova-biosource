@@ -9,21 +9,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: "Laboratory & Diagnostic Equipment Supplier in India | Zenova Biosource",
     template: `%s · ${site.name}`,
   },
   description: site.description,
-  keywords: [
-    "laboratory equipment",
-    "diagnostic equipment",
-    "medical equipment supplier",
-    "lab consumables",
-    "diagnostic kits",
-    "chemicals and reagents",
-    "hospital supplies",
-    "laboratory infrastructure",
-    "Zenova Biosource",
-  ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -31,13 +23,20 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: `${site.name} — ${site.tagline}`,
     description: site.description,
-    images: [{ url: "/logo.png", width: 512, height: 512, alt: site.name }],
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: site.name,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${site.name} — ${site.tagline}`,
     description: site.description,
-    images: ["/logo.png"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/logo.png?v=2",
@@ -83,19 +82,56 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
+              "@type": ["LocalBusiness", "Organization"],
               name: site.name,
               slogan: site.tagline,
               url: site.url,
               logo: `${site.url}/logo.png`,
+              image: `${site.url}/og-image.png`,
               description: site.description,
+              telephone: site.phone,
+              email: site.email,
+              priceRange: "₹₹",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: site.address,
+                addressLocality: "Guwahati",
+                addressRegion: "Assam",
+                addressCountry: "IN",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 26.1445,
+                longitude: 91.7362,
+              },
+              areaServed: "IN",
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                opens: "09:00",
+                closes: "19:00",
+              },
               contactPoint: {
                 "@type": "ContactPoint",
                 email: site.email,
+                telephone: site.phone,
                 contactType: "sales",
                 areaServed: "IN",
                 availableLanguage: ["English", "Hindi"],
               },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: site.name,
+              url: site.url,
+              description: site.description,
+              inLanguage: "en-IN",
             }),
           }}
         />

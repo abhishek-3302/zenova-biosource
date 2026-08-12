@@ -7,9 +7,12 @@ import { Counter } from "@/components/motion/counter";
 import { leadership, stats, timeline } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About — Lab & Diagnostic Equipment Supplier",
   description:
-    "Zenova Biosource is a premium supplier of laboratory, diagnostic and medical equipment serving hospitals, research institutes and government organizations across India.",
+    "Zenova Biosource supplies laboratory, diagnostic and medical equipment to hospitals, research institutes and government organizations across India.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const values = [

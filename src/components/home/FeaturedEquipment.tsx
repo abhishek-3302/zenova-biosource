@@ -23,7 +23,7 @@ export function FeaturedEquipment() {
           {featuredProducts.map((p) => (
             <StaggerItem key={p.name}>
               <Link
-                href={`/products#${p.categorySlug}`}
+                href={`/products/${p.categorySlug}`}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-panel/50 transition-all duration-300 hover:-translate-y-1.5 hover:border-teal/40"
               >
                 <div className="relative flex h-36 items-center justify-center overflow-hidden border-b border-line bg-linear-to-br from-mist/70 to-base2">

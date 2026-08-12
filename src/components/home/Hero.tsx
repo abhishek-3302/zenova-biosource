@@ -54,8 +54,8 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="font-display mt-6 text-[2.75rem] font-bold leading-[1.04] tracking-tight text-ink sm:text-6xl md:text-7xl"
           >
-            Empowering <span className="text-gradient">Healthcare</span> with
-            Quality &amp; Innovation
+            Laboratory &amp; Diagnostic Equipment{" "}
+            <span className="text-gradient">Supplier in India</span>
           </motion.h1>
 
           <motion.p
@@ -64,9 +64,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
             className="mt-6 max-w-xl leading-relaxed text-body md:text-lg"
           >
-            Delivering world-class laboratory, diagnostic and medical equipment
-            trusted by hospitals, research institutions and government
-            organizations.
+            Empowering healthcare with quality and innovation — supplying
+            laboratory, diagnostic and medical equipment to hospitals, research
+            institutions and government organizations across India.
           </motion.p>
 
           <motion.div

@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Check, Search, X } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight, Check, Search, X } from "lucide-react";
 import { categories, type Category } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -149,7 +150,9 @@ function CategorySection({ category }: { category: Category }) {
             </span>
             <div>
               <h2 className="font-display text-2xl font-semibold text-ink">
-                {category.name}
+                <Link href={`/products/${category.slug}`} className="transition-colors hover:text-teal-bright">
+                  {category.name}
+                </Link>
               </h2>
               <p className="text-sm text-mut">{category.items.length} product lines</p>
             </div>
@@ -157,7 +160,14 @@ function CategorySection({ category }: { category: Category }) {
           <p className="mt-5 text-sm leading-relaxed text-body">
             {category.description}
           </p>
-          <div className="mt-6">
+          <div className="mt-6 flex flex-wrap items-center gap-4">
+            <Link
+              href={`/products/${category.slug}`}
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-bright transition-colors hover:text-ink"
+            >
+              View category page
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
             <Button href="/contact#rfq" size="sm" variant="secondary">
               Enquire about this category
             </Button>

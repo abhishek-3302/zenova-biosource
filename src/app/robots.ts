@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://zenovabiosource.com/sitemap.xml",
+    sitemap: "https://www.zenovabiosource.com/sitemap.xml",
   };
 }

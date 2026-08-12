@@ -6,9 +6,12 @@ import { Stagger, StaggerItem } from "@/components/motion/reveal";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact Us — Request a Quote",
   description:
     "Contact Zenova Biosource for quotations, service requests, dealer enquiries and distributor registration. RFQ response within 24 hours.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 const channels = [

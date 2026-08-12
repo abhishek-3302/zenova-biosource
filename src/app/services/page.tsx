@@ -7,9 +7,12 @@ import { Stagger, StaggerItem } from "@/components/motion/reveal";
 import { services } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Installation, AMC & Calibration for Lab Equipment",
   description:
-    "Zenova Biosource service programs — installation, calibration, AMC, CMC, validation (IQ/OQ/PQ), training and technical support for laboratory and diagnostic equipment.",
+    "Zenova Biosource service programs — installation, calibration, AMC, CMC, IQ/OQ/PQ validation, training and technical support for lab equipment.",
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 const slas = [

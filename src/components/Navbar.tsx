@@ -141,7 +141,7 @@ export function Navbar() {
                           {categories.map((c) => (
                             <Link
                               key={c.slug}
-                              href={`/products#${c.slug}`}
+                              href={`/products/${c.slug}`}
                               className="group flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-base2/70"
                             >
                               <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-teal/25 bg-teal/10 text-teal-bright">
@@ -258,7 +258,7 @@ export function Navbar() {
                             {categories.map((c) => (
                               <Link
                                 key={c.slug}
-                                href={`/products#${c.slug}`}
+                                href={`/products/${c.slug}`}
                                 className="flex items-center gap-3 rounded-xl px-4 py-2.5 text-sm text-body hover:bg-base2/70 hover:text-teal-bright"
                               >
                                 <c.icon className="h-4 w-4 text-teal-bright" />

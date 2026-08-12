@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Privacy Policy for Zenova Biosource — how we collect, use, store and protect personal information for quotations, service requests and business enquiries.",
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 const sections = [
