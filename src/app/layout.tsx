@@ -9,7 +9,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Laboratory & Diagnostic Equipment Supplier in India | Zenova Biosource",
+    default: "Zenova Biosource | Laboratory & Diagnostic Equipment Supplier in India",
     template: `%s · ${site.name}`,
   },
   description: site.description,
@@ -87,6 +87,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": ["LocalBusiness", "Organization"],
               name: site.name,
+              alternateName: ["Zenova", "Zenova Biosource"],
+              legalName: site.name,
               slogan: site.tagline,
               url: site.url,
               logo: `${site.url}/logo.png`,

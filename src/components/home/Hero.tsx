@@ -54,7 +54,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="font-display mt-6 text-[2.75rem] font-bold leading-[1.04] tracking-tight text-ink sm:text-6xl md:text-7xl"
           >
-            Laboratory &amp; Diagnostic Equipment{" "}
+            Zenova Biosource — Laboratory &amp; Diagnostic Equipment{" "}
             <span className="text-gradient">Supplier in India</span>
           </motion.h1>
 
@@ -116,7 +116,7 @@ export function Hero() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs font-medium uppercase tracking-[0.2em] text-mut">
-                  Zenova Diagnostics
+                  Zenova Biosource
                 </p>
                 <p className="font-display mt-1 text-lg font-semibold text-ink">
                   Automated Analyzer
